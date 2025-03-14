@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDOS BY AKMALSHELLBY</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .matrix {
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: matrix-animation 0.1s linear infinite;
+        }
+
+        @keyframes matrix-animation {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100%); }
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .dots {
+            display: inline-block;
+            animation: dot-blink 1s infinite;
+        }
+
+        @keyframes dot-blink {
+            0%, 20% { opacity: 0; }
+            40% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .dot {
+            display: inline-block;
+            animation: dot-move 1s infinite;
+        }
+
+        @keyframes dot-move {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        #inputForm {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+        }
+
+        #inputLink {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid green;
+            border-radius: 5px;
+            background-color: black;
+            color: green;
+            width: 300px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        #inputLink:focus {
+            border-color: lime;
+            box-shadow: 0 0 5px lime;
+            outline: none;
+        }
+
+        #submitButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: black;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-left: 10px;
+        }
+
+        #submitButton:hover {
+            background-color: lime;
+            transform: scale(1.05);
+        }
+
+        #submitButton:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+				<center>
+								<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<br>
+<h2>DDoS BY AKMALSHELLBY</h2>
+
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="inputForm">
+				<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <input type="text" id="inputLink" placeholder="Masukkan link di sini" />
+    <br>
+    <br>
+
+    <br>
+    <button id="submitButton">Gas DDoS</button>
+</div>
+
+<div class="matrix"></div>
+<div class="loading" style="display: none;">
+    <h5>Proses DDoS<span class="dots">
+        <span class="dot">.</span>
+        <span class="dot">.</span>
+        <span class="dot">.</span>
+    </span></h1>
+</div>
+
+<script>
+    const chars = "abcdefghijklmnopqrstuvwxyz0123456789@#$%^&*()";
+    setInterval(() => {
+        let text = '';
+        for (let i = 0; i < 50; i++) {
+            text += chars.charAt(Math.floor(Math.random() * chars.length)) + ' ';
+        }
+        document.querySelector('.matrix').innerHTML += text + '<br>';
+    }, 100);
+
+    document.getElementById('submitButton').onclick = function() {
+        const inputLink = document.getElementById('inputLink').value;
+        const modifiedLink = inputLink + '/ygy';
+
+        document.querySelector('.loading').style.display = 'block';
+        document.getElementById('inputForm').style.display = 'none'; // Sembunyikan form input
+
+        setTimeout(() => {
+            window.location.href = modifiedLink;
+        }, 3000); // 3 detik
+    };
+</script>
+
+</body>
+</html>
+
+  <style>
+    @keyframes colorBlink {
+      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      33% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      66% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+    }
+
+    h2 {
+      animation: colorBlink 3s infinite;
+    }
+  </style>
